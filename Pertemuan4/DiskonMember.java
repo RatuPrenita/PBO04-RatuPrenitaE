@@ -39,6 +39,8 @@ public class DiskonMember {
             System.out.println("Total Bayar: "+ m.totbayar);
             System.out.println("Uang yang di berikan : "+ m.uang);
             System.out.println("Kembalian : "+ m.kembali);
+        } else{
+            System.out.println("Uang tidak cukur atau kurang : "+ (m.totbayar - m.uang));
         }
         
         

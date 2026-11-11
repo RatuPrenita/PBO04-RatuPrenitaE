@@ -45,11 +45,11 @@ public class GajiPegawai {
                 System.out.println("Kode keterangan tidak valid!");
                 return;
         }
-        
-        g.gajiBersih = g.gapok * g.totTun;
-        g.totTun = g.tunPas * g.tunAnk;
+       
         g.tunPas = 0.10 * g.gapok;
         g.tunAnk = 0.05 * g.gapok * g.jmlAnak;
+        g.totTun = g.tunPas + g.tunAnk;
+        g.gajiBersih = g.gapok + g.totTun;
         
         System.out.println("NIK : "+g.nik);
         System.out.println("Nama : "+g.nama);

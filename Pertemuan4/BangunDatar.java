@@ -39,9 +39,9 @@ public class BangunDatar {
                 lb.s1 = s.nextInt();
                 System.out.print("Nilai Sejajar 2 : ");
                 lb.s2 = s.nextInt();
-                System.out.print("Nilai Tinggi");
+                System.out.print("Nilai Tinggi : ");
                 lb.tinggi = s.nextInt();
-                System.out.println("Hasil "+ (0.5 * lb.s1 * lb.s2 * lb.tinggi));
+                System.out.println("Hasil "+ (0.5 * (lb.s1 + lb.s2) * lb.tinggi));
                 break;
             case 5 :
                 System.out.print("Nilai d1 : ");
@@ -49,6 +49,9 @@ public class BangunDatar {
                 System.out.print("Nilai d2 : ");
                 lb.d2 = s.nextInt();
                 System.out.println("Hasil "+ (0.5 * lb.d1 * lb.d2));
+                break;
+            default :
+                System.out.println("Pilihan tidak valid!");
         }
     }
 }
